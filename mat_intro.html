@@ -1,0 +1,50 @@
+<!-- LINALG BY SPOOKY -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Matrices in Linear Alebra</title>
+</head>
+
+
+<!-- body -->
+
+<body style='background-color: #222222;'>
+  <center><p style='color: #CDCDCD;' style='font-size: 18 px;'>Matrix Operations and Reduced Row Echelon Form (RREF)</center>
+  <br>
+  <center>---</center>
+  <p style='color: #CDCDCD;' style='font-size: 14 px;'><em>What even is a matrix operation?</em></p>
+  <p style='color: #CDCDCD;'> A matrix operation (aka "row operation") is a modification or series of modifications you can make to a matrix that don't change the solution sets (if a matrix is a representation of a set of linear equations. There are three different row operations you can perform on a matrix:</p>
+  <ol style='color: #CDCDCD;'>
+    <li style='color: #CDCDCD;'>Swap the locations of two rows in a matrix. Represented by Rᵢ↔Rⱼ, which would be swapping row i of matrix R with row j.</li>
+    <li style='color: #CDCDCD;'>Multiply each entry of a single row by a <i>nonzero</i> number. Represented by αRᵢ, where α != 0.</li>
+    <li style='color: #CDCDCD;'>Multiply each entry in a row by some quantity, and add these values to the values in the same column of the row below. After performing this operation, leave the original row unchanged, but replace the second row with the new row of numbers. Represented by αRᵢ + Rⱼ.</li>
+  </ol>
+  <p style='color: #CDCDCD;'>Matrices are "row equaivalent" if they can be proven to be equal to one another via using only these methods. Row operations are how one gets to the magical form of a matrix that is super helpful to have: the mythical Reduced Row Echelon Form (RREF). I'm sure you've heard of it before, but the criteria for a matrix to be in RREF are:</p>
+  <ol style='color #CDCDCD;'>
+    <li>If there are any rows with only zeroes, then those rows lie at the bottom of the matrix <em>and</em> there is a row above it with at least one nonzero number.</li>
+    <li>The leftmost number of any row that is nonzero must be 1.</li>
+    <li>The leftmost nonzero number of any row must be the only nonzero number in that column.</li>
+    <li>The leftmost element of an arbitrary row (A) and the leftmost element of another arbitrary row (B) must have the following relationship: if B's row > A's row, then B's column > A's column.</li>
+  </ol>
+  <p style='color: #CDCDCD;'>There are millions of online and offline calculators that will put something in RREF form for you, and there's no real point in drilling home that you know how these operations work. It's slightly more important to be able to identify if something is actually in RREF form (as some matrices may look deceptive), but also likely not really a concern. If you would like to test yourself, there's a seperate file that has a lot of extra practice problems in it [HERE].</p> <!-- add hyperlink -->
+  <br>
+  <p style='color: #CDCDCD;'>Finally, the last thing about RREF -- a Pivot Column. Most RREF matrices contain many of these, and a pivot column is simply just a column that has a leftmost nonzero number and all other numbers are 0:</p>
+  <!-- draw a photo of a matrix that fits this description about a matrix and helps illustrate some edge cases about it -->
+
+
+  <p style='color: #CDCDCD;'>So, now we can actually begin to solve some systems of linear equations problems with matrixes! Here's an example problem:</p>
+  <ol>
+    <li>You are a store manager for a trail mix company, trying to maximize profits based on what you add in the trail mix. You have a few prototypes of trail mix that you've already released, and you know the profits you made per bag of trail mix:
+      <ul>
+        <li>7 servings of peanuts (p), 5 servings of raisins (r), and 3 servings of chocolate (c) -- </li>
+      </ul>
+    </li>
+    
+  </ol>
+</body>
+
+
+
+</html>
