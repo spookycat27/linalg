@@ -36,31 +36,31 @@
 
   <p style='color: #CDCDCD;'>So, now we can actually begin to solve some systems of linear equations problems with matrixes! Here's an example problem:</p>
   <ol>
-    <li>You are a student in a Physics II class studying circuits. You are trying to find the current through some wires, and you use Kirchhoff's Loop Rules to get the following equations:
+    <li style='color: #CDCDCD;'>You are a student in a Physics II class studying circuits. You are trying to find the current through some wires, and you use Kirchhoff's Loop Rules to get the following equations:
       <ul>
-        <li>5V + I<sub>1</sub> + (30 Ω)I<sub>2</sub> = 0</li>
-        <li>5V + I<sub>1</sub> + (15Ω)I<sub>3</sub> = 0</li>
-        <li>I<sub>1</sub> = I<sub>2</sub> + I<sub>3</sub></li>
+        <li style='color: #CDCDCD;'>5V + I<sub>1</sub> + (30 Ω)I<sub>2</sub> = 0</li>
+        <li style='color: #CDCDCD;'>5V + I<sub>1</sub> + (15Ω)I<sub>3</sub> = 0</li>
+        <li style='color: #CDCDCD;'>I<sub>1</sub> = I<sub>2</sub> + I<sub>3</sub></li>
       </ul>
       You don't want to have to do a ton of algebra to get the solutions for this circuit. And thus, you decide to use the power of LINEAR ALGEBRA! First, you can order the equations like so:
       <ul>
-        <li>I<sub>1</sub> + (30 Ω)I<sub>2</sub> = -5V</li>
-        <li>I<sub>1</sub> + (15 Ω)I<sub>3</sub> = -5V</li>
-        <li>I<sub>1</sub> - I<sub>2</sub> - I<sub>3</sub> = 0</li>
+        <li style='color: #CDCDCD;'>I<sub>1</sub> + (30 Ω)I<sub>2</sub> = -5V</li>
+        <li style='color: #CDCDCD;'>I<sub>1</sub> + (15 Ω)I<sub>3</sub> = -5V</li>
+        <li style='color: #CDCDCD;'>I<sub>1</sub> - I<sub>2</sub> - I<sub>3</sub> = 0</li>
       </ul>
-      And then finally you convert it into the following matrix:
-      [ 1  30  0  -5 ]
-      [ 1  0  15  -5 ]
-      [ 1  -1  -1  0 ]
-      You have now gotten yourself an <em>Augmented Matrix</em>. And because of the given theorum T1.2, we can convert this matrix to RREF via the row operations to find the solutions! (I'll spare exactly what operations simplify the matrix):
-      [ 1  0  0  -5/11 ]
-      [ 0  1  0  -5/33 ]
-      [ 0  0  1 -10/33 ]
+      And then finally you convert it into the following matrix: <br>
+      [ 1  30  0  -5 ] <br>
+      [ 1  0  15  -5 ] <br>
+      [ 1  -1  -1  0 ] <br>
+      You have now gotten yourself an <em>Augmented Matrix</em>. And because of the given theorum T1.2, we can convert this matrix to RREF via the row operations to find the solutions! (I'll spare exactly what operations simplify the matrix): <br>
+      [ 1  0  0  -5/11 ] <br>
+      [ 0  1  0  -5/33 ] <br>
+      [ 0  0  1 -10/33 ] <br>
       Finally, we can convert this back to the equations:
       <ul>
-        <li>I<sub>1</sub> = -5/11</li>
-        <li>I<sub>2</sub> = -5/33</li>
-        <li>I<sub>3</sub> = -10/33</li>
+        <li style='color: #CDCDCD;'>I<sub>1</sub> = -5/11</li>
+        <li style='color: #CDCDCD;'>I<sub>2</sub> = -5/33</li>
+        <li style='color: #CDCDCD;'>I<sub>3</sub> = -10/33</li>
       </ul>
       And now you've perfectly avoided doing the algebra, and have your answers to the current travelling through the wires of the loop. 
     </li>
